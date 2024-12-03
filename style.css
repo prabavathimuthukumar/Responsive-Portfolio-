@@ -7,7 +7,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Gill sans',sans-serif;
+    font-family:'cursive',sans-serif;
     list-style: none;
 
 }
@@ -24,8 +24,7 @@ html{
 }
 body{
     background-color: var(--bg-color);
-    color:var(--text-color);
-    
+      color:var(--text-color);
 }
 .header{
     position: fixed;
@@ -41,8 +40,8 @@ body{
     z-index: 100;
 }
 .logo{
-    font-size: 2rem;
-    color: var(--text-color);
+    font-size: 35px;
+    color: white;
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -57,21 +56,24 @@ body{
     font-weight: 500;
     transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
+
 }
 .navbar a:hover,
 .navbar a:active{
-    color: var(--main-color);
-    border-bottom:3px solid var(--main-color)
+    text-decoration: none;
+    width: 100px;
+    padding: 25px;
+    color: var(--bg-color--);
+    border-bottom:5px solid var(--main-color);
 }
-
 #menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
     display: none;
 }
 section{
     min-height: 100vh;
-    padding: 10rem 9% 10rem
+    padding: 10rem 9% 10rem;
 }
 .home{
     display: flex;
@@ -250,7 +252,6 @@ span{
     margin: 2rem 0 3rem;
 
 }   
-
 .about-content.text-animation span::before{
     content:' Python Software Developer';
     color: var(--main-color);
@@ -434,27 +435,6 @@ section{
     color: var(--text-color);
     box-shadow: 0 0 50px var(--main-color);
 }
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-.footer ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}    
-.footer ul li a:hover{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
-}
-.footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
 
 @media(max-width:1285px){
     html{
@@ -476,7 +456,7 @@ section{
         padding: 10rem 3% 2rem;
     }
     .footer{
-        padding: 1rem 3%;
+        padding: 5rem 3%;
     }
 }
 @media(max-width:895px){
